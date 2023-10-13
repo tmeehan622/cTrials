@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0fb9253a-7ba0-4e81-8219-9c6d1c4f06eb",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "0fb9253a-7ba0-4e81-8219-9c6d1c4f06eb" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0fb9253a-7ba0-4e81-8219-9c6d1c4f06eb" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7B21A1EF-6117-4A86-8E9C-84C8752808E0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0fb9253a-7ba0-4e81-8219-9c6d1c4f06eb" : "cTrials\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ClinicalTrials",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ClinicalTrials.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/visualsoftinc.sourcerepo.com\/visualsoftinc\/cTrials2011",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0fb9253a-7ba0-4e81-8219-9c6d1c4f06eb"
+    }
+  ]
+}

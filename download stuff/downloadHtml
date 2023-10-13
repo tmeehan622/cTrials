@@ -1,0 +1,44 @@
+#!/bin/bash
+
+LETTERS="a b c d e f g h i j k l m n o p q r s t u v w x y z"
+
+#for letter in $LETTERS
+#do
+#	echo "cond_alpha_$letter";
+#	curl 
+#done
+
+group1="a,b,c,d,e,f,g,h,i"
+group2="j,k,l,m,n,o,p,q,r"
+group3="s,t,u,v,w,x,y,z"
+
+curl "http://clinicaltrials.gov/ct2/search/browse?brwse=cond_alpha_{$group1}" -o "./HTML/conditions/cond_#1.html"
+curl "http://clinicaltrials.gov/ct2/search/browse?brwse=cond_alpha_{$group2}" -o "./HTML/conditions/cond_#1.html"
+curl "http://clinicaltrials.gov/ct2/search/browse?brwse=cond_alpha_{$group3}" -o "./HTML/conditions/cond_#1.html"
+
+
+curl "http://clinicaltrials.gov/ct2/search/browse?brwse=intr_alpha_{$group1}" -o "./HTML/interventions/intr_#1.html"
+curl "http://clinicaltrials.gov/ct2/search/browse?brwse=intr_alpha_{$group2}" -o "./HTML/interventions/intr_#1.html"
+curl "http://clinicaltrials.gov/ct2/search/browse?brwse=intr_alpha_{$group3}" -o "./HTML/interventions/intr_#1.html"
+
+
+curl "http://clinicaltrials.gov/ct2/search/browse?brwse=spns_alpha_{$group1}" -o "./HTML/sponsors/spns_#1.html"
+curl "http://clinicaltrials.gov/ct2/search/browse?brwse=spns_alpha_{$group2}" -o "./HTML/sponsors/spns_#1.html"
+curl "http://clinicaltrials.gov/ct2/search/browse?brwse=spns_alpha_{$group3}" -o "./HTML/sponsors/spns_#1.html"
+
+
+curl "http://clinicaltrials.gov/ct2/search/browse?brwse=locn_alpha_{$group1}" -o "./HTML/locations/locn_#1.html"
+curl "http://clinicaltrials.gov/ct2/search/browse?brwse=locn_alpha_{$group2}" -o "./HTML/locations/locn_#1.html"
+curl "http://clinicaltrials.gov/ct2/search/browse?brwse=locn_alpha_{$group3}" -o "./HTML/locations/locn_#1.html"
+
+
+curl "http://clinicaltrials.gov/ct2/search/browse?brwse=ord_alpha_{$group1}" -o "./HTML/rare/rare_#1.html"
+curl "http://clinicaltrials.gov/ct2/search/browse?brwse=ord_alpha_{$group2}" -o "./HTML/rare/rare_#1.html"
+curl "http://clinicaltrials.gov/ct2/search/browse?brwse=ord_alpha_{$group3}" -o "./HTML/rare/rare_#1.html"
+
+
+curl "http://clinicaltrials.gov/ct2/search/browse?brwse=diet_alpha{$group1}" -o "./HTML/diet/diet_#1.html"
+curl "http://clinicaltrials.gov/ct2/search/browse?brwse=diet_alpha{$group2}" -o "./HTML/diet/diet_#1.html"
+curl "http://clinicaltrials.gov/ct2/search/browse?brwse=diet_alpha{$group3}" -o "./HTML/diet/diet_#1.html"
+
+

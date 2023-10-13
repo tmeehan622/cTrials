@@ -1,0 +1,9 @@
+//
+// Prefix header for all source files of the 'ClinicalTrials' target in the 'ClinicalTrials' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+	#import "Flurry.h"
+#endif

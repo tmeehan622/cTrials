@@ -1,0 +1,636 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+
+<head>
+<title>Understanding Clinical Trials - ClinicalTrials.gov</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+
+    <style type="text/css">
+<!--
+/* ----------------------------------------------
+ * ct.css
+ */
+
+
+
+/* ----------------------------------------------
+ * White background for page + standard body font
+ */
+
+body {
+  background-color:#ffffff;
+  font-family:Sans-Serif;
+  font-size:small;
+  font-weight:normal;
+}
+
+
+
+/* ----------------------------------------------
+ * Skip nav style
+ */
+
+.skip {
+  position:absolute;
+  left:-100px;
+  top:-100px;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+
+
+/* ----------------------------------------------
+ * Site colors
+ */
+
+/* Banner colors */
+.banner_color { background-color:#dde2ff; }
+.pale_banner_color { background-color:#eeeeff; }
+
+/* Message colors */
+.urgent_color { background-color:#ffddcc; }
+.alert_color { background-color:#eeffee; }
+.missing_color { background-color:#ffeee4; }
+.red_fore_color { color:#cc0000; }
+
+/* Tab colors */
+.fore_tab_color { background-color:#ffffff; }
+.back_tab_color { background-color:#ffffee; }
+.grayed_fore_color { color:#777777; }
+
+/* Page header (behind tabs) */
+.search_back_color { background-color:#445588; }
+.results_back_color { background-color:#9999aa; }
+.show_back_color { background-color:#6677aa; }
+.test_back_color { background-color:#449955; }
+
+/* Study results table colors */
+.bold_participant_color { background-color:#ddffdd; }
+.pale_participant_color { background-color:#f3fff3; }
+.note_participant_color { color:#339900; }
+
+.bold_baseline_color { background-color:#d7eaff; }
+.pale_baseline_color { background-color:#f3f9ff; }
+.note_baseline_color { color:#0033cc; }
+
+.bold_outcome_color { background-color:#ddddff; }
+.pale_outcome_color { background-color:#f5f5ff; }
+.note_outcome_color { color:#000077; }
+
+.bold_events_color { background-color:#e4dcf7; }
+.pale_events_color { background-color:#f8f3fd; }
+.note_events_color { color:#550077; }
+
+.bold_more_info_color { background-color:#dddddd; }
+.pale_more_info_color { background-color:#f7f7f7; }
+.note_more_info_color { color:#000000; }
+
+/* Links always blue */
+a:link { color:#0000cc; }
+a:visited { color:#0000cc; }
+a:active { color:#0000cc; }
+
+
+
+/* ----------------------------------------------
+ * Hit highlighting styles
+ */
+
+.hit_org {
+  font-weight:bold;
+  background-color:#ffeedd;
+}
+
+.hit_inf {
+  font-weight:bold;
+  background-color:#ffeedd;
+}
+
+.hit_syn {
+  font-weight:bold;
+  background-color:#ffffdd;
+}
+
+.hit_tpc {
+  font-weight:bold;
+  background-color:#ffffdd;
+}
+
+
+
+/* ----------------------------------------------
+ * Indents
+ */
+
+.indent1 {
+  margin-left:1em;
+  margin-right:1em;
+}
+
+.indent2 {
+  margin-left:2em;
+  margin-right:2em;
+}
+
+.indent3 {
+  margin-left:3em;
+  margin-right:3em;
+}
+
+.indent4 {
+  margin-left:4em;
+  margin-right:4em;
+}
+
+.indent5 {
+  margin-left:5em;
+  margin-right:5em;
+}
+
+
+
+/* ----------------------------------------------
+ * Standard header font styles
+ */
+
+.header1 {
+  font-family:Sans-Serif;
+  font-size:large;
+  font-weight:bolder;
+}
+
+.header2 {
+  font-family:Sans-Serif;
+  font-size:medium;
+  font-weight:bolder;
+}
+
+.header3 {
+  font-family:Sans-Serif;
+  font-size:small;
+  font-weight:bolder;
+}
+
+/* ----------------------------------------------
+ * Standard body font styles
+ */
+
+.body2 {
+  font-family:Sans-Serif;
+  font-size:medium;
+  font-weight:normal;
+}
+
+.body3 {
+  font-family:Sans-Serif;
+  font-size:small;
+  font-weight:normal;
+}
+
+/* ----------------------------------------------
+ * <pre> font style
+ */
+
+.fixed {
+  font-family:Monospace;
+  font-size:medium;
+  font-weight:bolder;
+}
+
+/* ----------------------------------------------
+ * Footer font style
+ */
+
+.footer {
+  font-family:sans-serif;
+  font-size:x-small;
+  font-weight:normal;
+}
+
+
+
+
+/* ----------------------------------------------
+ * Cell borders for messy Study Results tables
+ */
+
+.br {
+   border-right:2px ridge;
+   padding:5px 5px
+}
+
+.brt {
+   border-right:2px ridge;
+   border-top:2px ridge;
+   padding:5px 5px
+}
+
+
+-->
+    </style>
+</head>
+
+<body>
+
+
+<div class="body3">
+
+  <br/>
+  <div align="center" class="header1">Understanding Clinical Trials</div>
+  <br/>
+  <br/>
+
+  Choosing to participate in a clinical trial is an important personal decision.
+  The following frequently asked questions provide detailed
+  information about clinical trials. In addition, it is often helpful to talk
+  to a physician, family members, or friends about deciding to join a trial.
+  After identifying some trial options, the next step is to contact the
+  study research staff and ask questions about specific trials. <br/>
+
+  <br/>
+  <span class="header2">Frequently asked questions:</span><br/>
+  <div style="margin:1ex 1ex 1ex 2ex">
+    <a class="header3" href="#Q01">What is a clinical trial?</a><br/>
+    <a class="header3" href="#Q02">Why participate in a clinical trial?</a><br/>
+    <a class="header3" href="#Q03">Who can participate in a clinical trial?</a><br/>
+    <a class="header3" href="#Q04">What happens during a clinical trial?</a><br/>
+    <a class="header3" href="#Q05">What is informed consent?</a><br/>
+    <a class="header3" href="#Q06">What are the benefits and risks of participating in a clinical trial?</a><br/>
+    <a class="header3" href="#Q07">What are side effects and adverse reactions?</a><br/>
+    <a class="header3" href="#Q08">How is the safety of the participant protected?</a><br/>
+    <a class="header3" href="#Q09">What should people consider before participating in a trial?</a><br/>
+    <a class="header3" href="#Q10">What kind of preparation should a potential participant make for the meeting with the research coordinator or doctor?</a><br/>
+    <a class="header3" href="#Q11">Does a participant continue to work with a primary health care provider while in a trial?</a><br/>
+    <a class="header3" href="#Q12">Can a participant leave a clinical trial after it has begun?</a><br/>
+    <a class="header3" href="#Q13">Where do the ideas for trials come from?</a><br/>
+    <a class="header3" href="#Q14">Who sponsors clinical trials?</a><br/>
+    <a class="header3" href="#Q15">What is a protocol?</a><br/>
+    <a class="header3" href="#Q16">What is a placebo?</a><br/>
+    <a class="header3" href="#Q17">What is a control or control group?</a><br/>
+    <a class="header3" href="#Q18">What are the different types of clinical trials?</a><br/>
+    <a class="header3" href="#Q19">What are the phases of clinical trials?</a><br/>
+    <a class="header3" href="#Q20">What is an "expanded access" protocol?</a><br/>
+  </div>
+  <br/>
+
+  <br/>
+  <a name="Q01" class="header2">What is a clinical trial?</a><br/>
+  <br/>
+
+  Although there are many definitions of clinical trials, they are
+  generally considered to be biomedical or health-related research studies
+  in human beings that follow a pre-defined protocol.
+  ClinicalTrials.gov includes both interventional and observational types of studies.
+  Interventional studies are those in which the research subjects are assigned by
+  the investigator to a treatment or other intervention, and their outcomes are
+  measured.  Observational studies are those in which individuals are observed
+  and their outcomes are measured by the investigators.<br/>
+  <br/>
+
+  <br/>
+  <a name="Q02" class="header2">Why participate in a clinical trial?</a><br/>
+  <br/>
+
+  Participants in clinical trials can play a more active role in their own health care,
+  gain access to  new research treatments before they are widely available,
+  and help others by contributing to medical research.<br/>
+  <br/>
+
+  <br/>
+  <a name="Q03" class="header2">Who can participate in a clinical trial?</a><br/>
+  <br/>
+
+  All clinical trials have guidelines about who can participate.
+  Using <a href="glossary.html#inclusion">inclusion/exclusion criteria</a> is an important
+  principle of medical research that helps to produce reliable results. The
+  factors that allow someone to participate in a clinical trial are called "inclusion
+  criteria" and those that disallow someone from participating are called "exclusion
+  criteria". These criteria are based
+  on such factors as age, gender, the type and stage of a disease, previous
+  treatment history, and other medical conditions. Before joining a clinical
+  trial, a participant must qualify for the study. Some research studies seek participants with illnesses or
+  conditions to be studied in the clinical trial, while others need healthy participants.
+  It is important to note that inclusion and exclusion criteria are not used to
+  reject people personally. Instead, the criteria are used to identify
+  appropriate participants and keep them safe. The criteria help ensure that
+  researchers will be able to answer the questions they plan to study.<br/>
+  <br/>
+
+  <br/>
+  <a name="Q04" class="header2">What happens during a clinical trial?</a><br/>
+  <br/>
+
+  The clinical trial process depends on the kind of trial
+  being conducted (See <a href="#Q18">What are the different types of clinical trials?</a>)
+  The clinical trial team includes doctors and nurses as
+  well as social workers and other health care professionals. They check the
+  health of the participant at the beginning of the trial, give specific
+  instructions for participating in the trial, monitor the participant carefully
+  during the trial, and stay in touch after the trial is completed.<br/>
+  <br/>
+
+  Some clinical trials involve more tests and doctor visits than the participant
+  would normally have for an illness or condition. For all types of trials, the participant
+  works with a research team. Clinical trial participation is most successful when
+  the <a href="glossary.html#protocols">protocol</a> is carefully followed
+  and there is frequent contact with the research staff.<br/>
+  <br/>
+
+  <br/>
+  <a name="Q05" class="header2">What is informed consent?</a><br/>
+  <br/>
+
+  Informed consent is the process of learning the key facts about a clinical trial
+  before deciding whether or not to participate. It is also a continuing process
+  throughout the study to provide information for participants. To help someone
+  decide whether or not to participate, the doctors and nurses involved in the
+  trial explain the details of the study. If the participant's native language is
+  not English, translation assistance can be provided. Then the research team provides
+  an <a href="glossary.html#icd">informed consent document</a> that
+  includes details about the study, such as its purpose, duration, required
+  procedures, and key contacts. Risks and potential benefits are explained
+  in the informed consent document. The participant then decides whether
+  or not to sign the document.  Informed consent is not a contract, and the
+  participant may withdraw from the trial at any time.<br/>
+  <br/>
+
+  <br/>
+  <a name="Q06" class="header2">What are the benefits and risks of participating in a clinical trial?</a><br/>
+  <br/>
+
+  <span class="header3">Benefits</span><br/>
+  <br/>
+
+  Clinical trials that are well-designed and well-executed are the best approach
+  for eligible participants to:<br/>
+  <ul type="disc">
+    <li>Play an active role in their own health care.</li>
+    <li>Gain access to new research treatments before they are widely available. </li>
+    <li>Obtain expert medical care at leading health care facilities during the trial.</li>
+    <li>Help others by contributing to medical research.</li>
+  </ul>
+
+  <span class="header3">Risks</span><br/>
+  <br/>
+
+  There are risks to clinical trials.<br/>
+
+  <ul type="disc">
+    <li>There may be unpleasant, serious or even life-threatening side effects to experimental treatment.</li>
+    <li>The experimental treatment may not be  effective for the participant.</li>
+    <li>The <a href="glossary.html#protocols">protocol</a> may require more of their time
+      and attention than would a non-protocol treatment, including trips to the study site, more treatments,
+      hospital stays or complex dosage requirements.</li>
+  </ul>
+
+  <br/>
+  <a name="Q07" class="header2">What are side effects and adverse reactions?</a><br/>
+  <br/>
+
+  Side effects are any undesired actions or effects of the experimental drug or
+  treatment. Negative or adverse effects may include headache, nausea, hair loss,
+  skin irritation, or other physical problems. Experimental treatments must be
+  evaluated for both immediate and long-term side effects.<br/>
+  <br/>
+
+  <br/>
+  <a name="Q08" class="header2">How is the safety of the participant protected?</a><br/>
+  <br/>
+
+  The ethical and legal codes that govern medical practice also apply to clinical trials. In addition,
+  most clinical research is federally regulated with built in safeguards to protect the participants.
+  The trial follows a carefully controlled protocol, a study plan which details what researchers will do
+  in the study. As a clinical trial progresses, researchers report the results of the trial at scientific
+  meetings, to medical journals, and to various government agencies.  Individual participants' names will
+  remain secret and will not be mentioned in these reports
+  (See <A href="glossary.html#confidentiality">Confidentiality Regarding Trial Participants</A>).<br/>
+  <br/>
+
+  <br/>
+  <a name="Q09" class="header2">What should people consider before participating in a trial?</a><br/>
+  <br/>
+
+  People should know as much as possible about the clinical trial and feel comfortable
+  asking the members of the health care team questions about it, the care expected
+  while in a trial, and the cost of the trial. The following questions might be helpful
+  for the participant to discuss with the health care team. Some of the answers to these
+  questions are found in the informed consent document.<br/>
+
+  <ul type="disc">
+    <li>What is the purpose of the study?</li>
+    <li>Who is going to be in the study?</li>
+    <li>Why do researchers believe the experimental treatment being tested may be effective? Has it been tested before?</li>
+    <li>What kinds of tests and experimental treatments are involved?</li>
+    <li>How do the possible risks, side effects, and benefits in the study compare with my current treatment?</li>
+    <li>How might this trial affect  my daily life?</li>
+    <li>How long will the trial last?</li>
+    <li>Will hospitalization be required?</li>
+    <li>Who will pay for the experimental treatment?</li>
+    <li>Will I be reimbursed for  other expenses?</li>
+    <li>What type of long-term follow  up care is part of this study? </li>
+    <li>How will I know that the experimental treatment is working? Will results of the trials be provided to me?</li>
+    <li>Who will be in charge of my care? </li>
+  </ul>
+
+  <br/>
+  <a name="Q10" class="header2">What kind of preparation should a potential participant
+    make for the meeting with the research coordinator or doctor?</a><br/>
+
+  <ul type=disc>
+    <li>Plan ahead and write down possible questions to ask.</li>
+    <li>Ask a friend or relative to come along for support and to hear the responses to the questions.</li>
+    <li>Bring a tape recorder to record the discussion to replay later.</li>
+  </ul>
+
+  Every clinical trial in the U.S. must be approved and monitored by an
+  <a href="glossary.html#institutional">Institutional Review Board (IRB)</a>
+  to make sure the risks are as low as possible and are worth any potential benefits.
+  An IRB is an independent committee of physicians, statisticians, community advocates,
+  and others that ensures that a clinical trial is ethical and the rights of study
+  participants are protected. All institutions that conduct or support biomedical
+  research involving people must, by federal regulation, have an IRB that initially
+  approves and periodically reviews the research.<br/>
+  <br/>
+
+  <br/>
+  <a name="Q11" class="header2">Does a participant continue to work with a primary
+    health care provider while in a trial?</a><br/>
+  <br/>
+
+  Yes. Most clinical trials provide short-term treatments
+  related to a designated illness or condition, but do not provide extended or
+  complete primary health care. In addition, by having the health care provider
+  work with the research team, the participant can ensure that other medications
+  or treatments will not conflict with the
+  <a href="glossary.html#protocols">protocol</a>.<br/>
+  <br/>
+
+  <br/>
+  <a name="Q12" class="header2">Can a participant leave a clinical trial after it has begun?</a><br/>
+  <br/>
+
+  Yes. A participant can leave a clinical trial, at any time.
+  When withdrawing from the trial, the participant should let the research team
+  know about it, and the reasons for leaving the study.<br/>
+  <br/>
+
+  <br/>
+  <a name="Q13" class="header2">Where do the ideas for trials come from?</a><br/>
+  <br/>
+
+  Ideas for clinical trials usually come from researchers. After researchers test
+  new therapies or procedures in the laboratory and in animal studies, the experimental
+  treatments with the most promising laboratory results are moved into clinical trials.
+  During a trial, more and more information is gained about an experimental treatment,
+  its risks and how well it may or may not work.<br/>
+  <br/>
+
+  <br/>
+  <a name="Q14" class="header2">Who sponsors clinical trials?</a><br/>
+  <br/>
+
+  Clinical trials are sponsored or funded by a variety of organizations or individuals
+  such as physicians, medical institutions, foundations, voluntary groups, and pharmaceutical
+  companies, in addition to federal agencies such as the National Institutes of Health (NIH),
+  the Department of Defense (DOD), and the  Department of Veteran's Affairs (VA). Trials can
+  take place in a variety of locations, such as hospitals, universities, doctors' offices, or
+  community clinics.<br/>
+  <br/>
+
+  <br/>
+  <a name="Q15" class="header2">What is a protocol?</a><br/>
+  <br/>
+
+  A protocol is a study plan on which all clinical trials are based. The plan is
+  carefully designed to safeguard the health of the participants as well as answer
+  specific research questions. A protocol describes what types of people may participate
+  in the trial; the schedule of tests, procedures, medications, and dosages; and the
+  length of the study. While in a clinical trial, participants following a protocol
+  are seen regularly by the research staff to monitor their health and
+  to determine the safety and effectiveness of their treatment.<br/>
+  <br/>
+
+  <br/>
+  <a name="Q16" class="header2">What is a placebo?</a><br/>
+  <br/>
+
+  A placebo is an inactive pill, liquid, or powder that has no treatment value.
+  In clinical trials, experimental treatments are often compared with placebos to
+  assess the experimental treatment's effectiveness. In some studies, the participants
+  in the <a href="glossary.html#group">control group</a> will receive
+  a placebo instead of an active drug or experimental treatment.<br/>
+  <br/>
+
+  <br/>
+  <a name="Q17" class="header2">What is a control or control group?</a><br/>
+  <br/>
+
+  A control is the standard by which experimental observations are evaluated.
+  In many clinical trials, one group of patients will be given an experimental drug
+  or treatment, while the control group is given either a standard treatment for the
+  illness or a placebo.<br/>
+  <br/>
+
+  <br/>
+  <a name="Q18" class="header2">What are the different types of clinical trials?</a><br/>
+  <br/>
+
+  <a href="glossary.html#ttrials">Treatment trials</a>
+  test experimental treatments, new combinations of drugs, or new approaches to
+  surgery or radiation therapy.<br/>
+  <br/>
+
+  <a href="glossary.html#prevention">Prevention trials</a> look for
+  better ways to prevent disease in people who have never had the disease or to prevent
+  a disease from returning. These approaches may include medicines, vaccines, vitamins,
+  minerals, or lifestyle changes.<br/>
+  <br/>
+
+  <a href="glossary.html#diagnostic">Diagnostic trials</a> are conducted
+  to find better tests or procedures for diagnosing a particular disease or condition.<br/>
+  <br/>
+
+  <a href="glossary.html#screening">Screening trials</a> test the best
+  way to detect certain diseases or health conditions.<br/>
+  <br/>
+
+  <A href="glossary.html#quality">Quality of Life trials</A>
+  (or Supportive Care trials) explore ways to improve comfort and the quality of
+  life for individuals with a chronic illness.<br/>
+  <br/>
+
+  <br/>
+  <a name="Q19" class="header2">What are the phases of clinical trials?</a><br/>
+  <br/>
+
+  Clinical trials are conducted in phases.  The trials at each phase have a different
+  purpose and help scientists answer different questions:<br/>
+  <br/>
+
+  In <a href="glossary.html#phasel">Phase I trials</a>, researchers
+  test an experimental drug or treatment in a small group of people (20-80) for the
+  first time to evaluate its safety, determine a safe dosage range, and identify
+  side effects.<br/>
+  <br/>
+
+  In <a href="glossary.html#phasell">Phase II trials</a>, the
+  experimental study drug or treatment is given to a larger group of people
+  (100-300) to see if it is effective and to further evaluate its safety.<br/>
+  <br/>
+
+  In <a href="glossary.html#phaselll">Phase III trials</a>, the
+  experimental study drug or treatment is given to large groups of people
+  (1,000-3,000) to confirm its effectiveness, monitor side effects, compare it
+  to commonly used treatments, and collect information that will allow the
+  experimental drug or treatment to be used safely.<br/>
+  <br/>
+
+  In <a href="glossary.html#phaselv">Phase IV trials</a>, post
+  marketing studies delineate additional information including the drug's risks,
+  benefits, and optimal use.<br/>
+  <br/>
+
+  <br/>
+  <a name="Q20" class="header2">What is an "expanded access" protocol?</a><br/>
+  <br/>
+
+  Most human use of <a href="glossary.html#investigational">investigational new drugs</a>
+  takes place in <a href="glossary.html#contrials">controlled clinical trials</a>
+  conducted to assess safety and <a href="glossary.html#efficacy">efficacy</a> of new drugs.
+  Data from the trials can serve as the basis for the drug marketing application.
+  Sometimes, patients do not qualify for these carefully-controlled trials
+  be cause of other health problems, age, or other factors. For patients who
+  may  benefit from the drug use but don't qualify for the trials, <a href="glossary.html#food">FDA</a>
+  regu lations enable manufacturers of investigational new drugs to provide for
+  "expanded access" use of the drug. For example, a <a href="glossary.html#tind">treatment IND</a>
+  (Investigational New Drug application) or treatment protocol is a relatively
+  unrestricted study.  The primary intent of a treatment IND/protocol is to
+  provide for access to the new drug for people with a life-threatening or
+  serious disease for which there is no good alternative treatment.  A
+  secondary purpose for a treatment IND/protocol is to generate additional
+  information about the drug, especially its safety.  Expanded access
+  protocols can be undertaken only if clinical investigators are actively
+  studying the experimental treatment in well-controlled studies, or all studies have
+  been completed.  There must be evidence that the drug may be an effective
+  treatment in patients like those to be treated under the protocol.  The drug
+  cannot expose patients to unreasonable risks given the severity of the
+  disease to be treated.<br/>
+  <br/>
+
+  Some investigational drugs are available from pharmaceutical manufacturers
+  through expanded access programs listed in ClinicalTrials.gov.
+  Expanded access protocols are generally managed by the manufacturer, with the
+  investigational treatment administered by researchers or doctors in
+  office-based practice.  If you or a loved one are interested in treatment
+  with an investigational drug under an expanded access protocol listed in
+  ClinicalTrials.gov, review the protocol
+  <a href="glossary.html#eligibility">eligibility criteria</a> and location
+  information and inquire at the Contact Information number.<br/>
+  <br/>
+  <br/>
+  <br/>
+
+</body>
+</html>

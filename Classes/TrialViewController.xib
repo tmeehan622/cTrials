@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TrialViewController">
+            <connections>
+                <outlet property="busy" destination="4" id="12"/>
+                <outlet property="jumpButton" destination="50" id="51"/>
+                <outlet property="jumpContainer" destination="59" id="64"/>
+                <outlet property="jumpPicker" destination="70" id="79"/>
+                <outlet property="mainView" destination="1" id="23"/>
+                <outlet property="myTable" destination="18" id="19"/>
+                <outlet property="optionsHsndler" destination="43" id="49"/>
+                <outlet property="optionsMenuTable" destination="42" id="48"/>
+                <outlet property="optionsMenuView" destination="39" id="40"/>
+                <outlet property="view" destination="29" id="30"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="29">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <subviews>
+                        <tableView opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" bouncesZoom="NO" style="grouped" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="18">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="20"/>
+                                <outlet property="delegate" destination="-1" id="21"/>
+                            </connections>
+                        </tableView>
+                        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4">
+                            <rect key="frame" x="155.66666666666669" y="358.66666666666669" width="103.66666666666669" height="20"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rW1-MK-yqV">
+                                    <rect key="frame" x="0.0" y="0.0" width="103.66666666666666" height="20"/>
+                                    <subviews>
+                                        <activityIndicatorView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="6">
+                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        </activityIndicatorView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" text="Loading..." lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5">
+                                            <rect key="frame" x="28" y="0.0" width="75.666666666666657" height="20"/>
+                                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="rW1-MK-yqV" firstAttribute="top" secondItem="4" secondAttribute="top" id="3ka-XQ-lGy"/>
+                                <constraint firstItem="rW1-MK-yqV" firstAttribute="leading" secondItem="4" secondAttribute="leading" id="7g2-M6-e7C"/>
+                                <constraint firstAttribute="bottom" secondItem="rW1-MK-yqV" secondAttribute="bottom" id="OuK-9V-Oh5"/>
+                                <constraint firstAttribute="trailing" secondItem="rW1-MK-yqV" secondAttribute="trailing" id="ULr-0c-ioa"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="4" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" id="Gck-f7-NOW"/>
+                        <constraint firstItem="4" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="zhd-MI-Lic"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1" firstAttribute="leading" secondItem="29" secondAttribute="leading" id="7By-Ga-5bG"/>
+                <constraint firstItem="1" firstAttribute="top" secondItem="29" secondAttribute="top" id="Kli-K9-8SN"/>
+                <constraint firstAttribute="bottom" secondItem="1" secondAttribute="bottom" id="Z4p-XW-LRB"/>
+                <constraint firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="qEU-bp-OKL"/>
+            </constraints>
+            <point key="canvasLocation" x="-422" y="54"/>
+        </view>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="39" customClass="BackgroundView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="72" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="42" customClass="VSStylishTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="43" id="46"/>
+                        <outlet property="delegate" destination="43" id="47"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="42" secondAttribute="bottom" id="O7u-tc-U0N"/>
+                <constraint firstAttribute="trailing" secondItem="42" secondAttribute="trailing" id="S2E-B5-hqa"/>
+                <constraint firstItem="42" firstAttribute="top" secondItem="39" secondAttribute="top" id="gHR-ys-g45"/>
+                <constraint firstItem="42" firstAttribute="leading" secondItem="39" secondAttribute="leading" id="r6S-ND-LJL"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="482" y="54"/>
+        </view>
+        <customObject id="43" customClass="OptionsHandler">
+            <connections>
+                <outlet property="myController" destination="-1" id="44"/>
+                <outlet property="myTable" destination="42" id="45"/>
+            </connections>
+        </customObject>
+        <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="50">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+            <size key="titleShadowOffset" width="1" height="1"/>
+            <state key="normal" image="Toolbar_JumpButton">
+                <color key="titleColor" red="0.19607843" green="0.30980393000000001" blue="0.52156866000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            </state>
+            <state key="highlighted">
+                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            </state>
+            <connections>
+                <action selector="doJump:" destination="-1" eventType="touchUpInside" id="52"/>
+            </connections>
+            <point key="canvasLocation" x="-295" y="-375"/>
+        </button>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="59" userLabel="jumpContainer" customClass="BackgroundView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="71">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <items>
+                        <barButtonItem title="Cancel" id="72">
+                            <connections>
+                                <action selector="cancelJump:" destination="-1" id="75"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="74"/>
+                        <barButtonItem title="Go" id="73">
+                            <connections>
+                                <action selector="finishJump:" destination="-1" id="76"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </toolbar>
+                <pickerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="70">
+                    <rect key="frame" x="0.0" y="44" width="414" height="216"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="77"/>
+                        <outlet property="delegate" destination="-1" id="78"/>
+                    </connections>
+                </pickerView>
+            </subviews>
+            <color key="backgroundColor" red="0.55560910701751709" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="70" firstAttribute="leading" secondItem="59" secondAttribute="leading" id="Lwr-Dl-tgV"/>
+                <constraint firstItem="71" firstAttribute="leading" secondItem="59" secondAttribute="leading" id="Zmc-Vr-1AJ"/>
+                <constraint firstItem="71" firstAttribute="top" secondItem="59" secondAttribute="top" id="lpi-MY-tlR"/>
+                <constraint firstItem="70" firstAttribute="top" secondItem="71" secondAttribute="bottom" id="rAt-WM-DRY"/>
+                <constraint firstAttribute="trailing" secondItem="70" secondAttribute="trailing" id="rnZ-Ub-Pu6"/>
+                <constraint firstAttribute="trailing" secondItem="71" secondAttribute="trailing" id="voY-P9-4zv"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="34" y="54"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Toolbar_JumpButton" width="56" height="22"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina5_5.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
